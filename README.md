@@ -14,29 +14,39 @@
 
 ```
 Assets/
-├── _Project/               # Main project files
-│   ├── Scripts/
-│   │   ├── Runtime/        # Runtime scripts
-│   │   │   ├── Core/       # Core game systems
-│   │   │   ├── Networking/ # Network functionality
-│   │   │   ├── UI/         # User interface
-│   │   │   ├── Gameplay/   # Game mechanics
-│   │   │   ├── Data/       # Data structures
-│   │   │   └── Utils/      # Utility functions
-│   │   └── Editor/         # Editor-only scripts
-│   ├── Art/                # Visual assets
-│   │   ├── Models/         # 3D models
-│   │   ├── Textures/       # Texture files
-│   │   ├── Materials/      # Unity materials
-│   │   ├── Audio/          # Sound effects & music
-│   │   └── Animations/     # Animation files
-│   ├── Prefabs/            # Game object prefabs
-│   ├── ScriptableObjects/  # Data containers
-│   └── Settings/           # Project settings
-├── Plugins/                # Third-party plugins
-│   └── PocketBase/         # PocketBase integration
-├── ThirdParty/             # External assets
-└── Documentation/          # Project documentation
+├── GameCore/                   # Core game systems
+│   ├── Scripts/                # Game logic scripts
+│   │   ├── Runtime/            # Runtime scripts
+│   │   │   ├── Core/           # Core game systems
+│   │   │   ├── Networking/     # Network functionality
+│   │   │   ├── UI/             # User interface
+│   │   │   ├── Gameplay/       # Game mechanics
+│   │   │   ├── Data/           # Data structures
+│   │   │   └── Utils/          # Utility functions
+│   │   └── Editor/             # Editor-only scripts
+│   ├── Systems/                # Game systems and managers
+│   └── Managers/               # Singleton managers
+├── GameContent/                # All game content
+│   ├── Characters/             # Character models & animations
+│   ├── Environment/            # Environment assets
+│   ├── Items/                  # Game items and objects
+│   ├── Audio/                  # Sound effects & music
+│   ├── Animations/             # Animation files
+│   └── ImportedAssets/         # Downloaded/imported content
+├── GameUI/                     # User interface
+│   ├── Menus/                  # Menu screens
+│   ├── HUD/                    # Heads-up display
+│   └── Dialogs/                # Dialog windows
+├── ThirdPartyAssets/           # External assets & plugins
+│   ├── Plugins/                # Third-party plugins
+│   │   └── PocketBase/         # PocketBase integration
+│   ├── TextMeshPro/            # TextMeshPro assets
+│   └── KevinIglesias/          # Animation packages
+├── ProjectSettings/            # Project configuration
+│   └── CoreSettings/           # Core settings files
+├── EditorTools/                # Development tools
+│   └── CustomTools/            # Custom editor utilities
+└── Documentation/              # Project documentation
 ```
 
 ## 🛠️ Setup Instructions
@@ -67,7 +77,7 @@ Assets/
 ### PocketBase Setup
 
 1. **Configure PocketBase:**
-   - Update connection settings in `Assets/_Project/Settings/`
+   - Update connection settings in `Assets/ProjectSettings/CoreSettings/`
    - Set your PocketBase server URL
    - Configure authentication settings
 

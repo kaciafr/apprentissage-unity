@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4580243838cac69aa1f0374cbb4c17, type: 3}
+  m_Name: Stone
+  m_EditorClassIdentifier: 
+  objectName: Sword
+  visualObject: {fileID: -597705514, guid: 70c108984ca5b88d088414f27f9e91c6, type: 3}
+  description: 'Simple stone '
+  prefabObject: {fileID: 232340353500265129, guid: b77da320013765a7db2d8b33ef39b0f8, type: 3}
