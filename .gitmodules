@@ -1,0 +1,3 @@
+[submodule "Assets/Pocketbase"]
+	path = Assets/Pocketbase
+	url = https://github.com/kaciafr/UnityPocketBase.git
